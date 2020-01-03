@@ -1,0 +1,4 @@
+<div class="notify-me" *ngIf="product.price > 700">
+  <button (click)="notify.emit(product.name)">{{product.name}} overvalued!</button>
+  price: {{product.price}}
+</div>
