@@ -4,7 +4,9 @@
   <hr>
   <h3>
     <!-- Property binding [ ] syntax in the title -->
-    <a href="#" [title]="product.name + ' details'">{{product.name}}</a>
+    <a href="#" [title]="product.name + ' details'" [routerLink]="['/products',productId]">
+      {{product.name}}
+    </a>
   </h3>
   <!-- Directive *ngIf and the interpolation syntax {{ }} -->
   <p *ngIf="product.description">{{product.description}}</p>
@@ -30,7 +32,7 @@
   <ul>
     <li>ngFor</li>
     <li>ngIf</li>
-    <li>Interpolation <code>{{ a }}</code></li>
+    <li>Interpolation <code>{{  }}</code></li>
     <li>Property binding [ ]</li>
     <li>Event binding ( )</li>
   </ul>  
